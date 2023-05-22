@@ -12,7 +12,7 @@ const INITIAL_SESSION = {
     messages: [],
 }
 
-const bot = new Telegraf("6263423436:AAHjy1Zriklgr4WvI9HiQAs3CHajNWDf9eU")
+const bot = new Telegraf(config.get("TELEGRAM_TOKEN"))
 
 bot.use(session())
 
